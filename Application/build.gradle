@@ -15,11 +15,13 @@ repositories {
     jcenter()
 }
 
+ext.versions = [supportLibVersion: "24.2.0"]
+
 dependencies {
-    compile "com.android.support:support-v4:24.2.0"
-    compile "com.android.support:support-v13:24.2.0"
-    compile "com.android.support:cardview-v7:24.2.0"
-    compile "com.android.support:appcompat-v7:24.2.0"
+    compile "com.android.support:support-v4:$versions.supportLibVersion"
+    compile "com.android.support:support-v13:$versions.supportLibVersion"
+    compile "com.android.support:cardview-v7:$versions.supportLibVersion"
+    compile "com.android.support:appcompat-v7:$versions.supportLibVersion"
 }
 
 // The sample build uses multiple directories to
